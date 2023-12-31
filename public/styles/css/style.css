@@ -1,0 +1,150 @@
+
+:root {
+  --main-color: #1a1a1a;
+  --secondary-color: #ffffff;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-family: sans-serif;
+}
+
+.header, .footer {
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .section-inner {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+
+.header_title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+    height: 80%;
+    padding: 20px 50px;
+}
+
+.console_output {
+  position: relative;
+  min-height: 300px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+  cursor: text;
+  margin-top: -2px;
+  padding: 10px;
+}
+
+.editor-container {
+    position: relative;
+    min-height: fit-content;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+    cursor: text;
+    margin-bottom: 20px;
+}
+
+.editor_colors,
+.editor {
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 24px;
+  width: 100%;
+  height: fit-content;
+  min-height: 400px;
+  padding: 10px 46px;
+  line-height: 36px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.editor {
+  color: transparent; 
+  caret-color: var(--secondary-color); 
+  outline: none;
+}
+
+.editor::selection, .editor *::selection {
+  background: hsla( 0, 0%, 90%, 0.5);
+}
+
+.editor_colors {
+  position: absolute;
+  user-select: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.editor_colors i {
+  font-style: normal;
+}
+
+.numbersContainer {
+  position: absolute;
+  z-index: 3;
+  left: 10px;
+  top: 12px;
+  font-size: 22px;
+  opacity: .5;
+  display: flex;
+  flex-direction: column;
+  line-height: 36px;
+  pointer-events: none;
+  height: calc(100% - 12px);
+  overflow: hidden;
+}
+
+.header-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.header_btn {
+  border-radius: 8px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+.header-btn_img {
+  height: 100%;
+  width: 100%;
+}
+
+i.python_quot { color: hsl( 50, 75%, 70%); }
+i.python_func { color: rgb(20, 170, 245); }
+i.python_pare { color: hsl(210, 75%, 70%); }
+i.python_squa { color: hsl(230, 75%, 70%); }
+i.python_curl { color: hsl(250, 75%, 70%); }
+i.python_numb { color: hsl(100, 75%, 70%); }
+i.python_logi { color: hsl(200, 75%, 70%); }
+i.python_equa { color: hsl(200, 75%, 70%); }
+i.python_comm { color: hsl(200, 10%, 45%); font-style: italic; }
+i.python_comm > * { color: inherit; }
+i.python_oper { color:hsl(300, 75%, 70%) }
+
+.base-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Python</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+
+    <header class="header section-outer">
+        <div class="section-inner">
+            <h1 class="header_title">Python Online</h1>
+            <div class="header-btns">
+                <button class="header_btn theme-btn dark"><img src="theme_dark.svg" alt="theme" class="header-btn_img"></button>
+                <a href="https://github.com/V0r1ex" target="_blank"><button class="header_btn github-btn"><img src="github_dark.svg" alt="github" class="header-btn_img"></button></a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="section-outer">
+            <div class="section-inner">
+                <div class="editor-container">
+                    <div class="numbersContainer"></div>
+                    <div class="editor_colors"></div>
+                    <div class="editor" data-lang="python"></div>
+                </div>
+                <div class="btns-container">
+                    <button class="run-btn base-btn">run</button>
+                    <button class="clear-btn base-btn">clear</button>
+                    <button class="to-file-btn base-btn">to file</button>
+                    <button class="search-btn base-btn">search error</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-outer console">
+            <div class="section-inner">
+                <div class="console_output"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="ajax.js"></script>
+</body>
+</html>
